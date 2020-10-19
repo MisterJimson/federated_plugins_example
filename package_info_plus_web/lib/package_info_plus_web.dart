@@ -3,8 +3,7 @@ import 'dart:html';
 
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 import 'package:http/http.dart';
-import 'package:package_info_plus_platform_interface/package_info_data.dart';
-import 'package:package_info_plus_platform_interface/package_info_platform_interface.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 
 /// The web implementation of [PackageInfoPlatform].
 ///
@@ -16,7 +15,7 @@ class PackageInfoPlugin extends PackageInfoPlatform {
   }
 
   @override
-  Future<PackageInfoData> getAll() async {
+  Future<PackageInfo> getAll() async {
     String url =
         "${window.location.protocol}//${window.location.hostname}:${window.location.port}/version.json";
 
@@ -29,16 +28,16 @@ class PackageInfoPlugin extends PackageInfoPlatform {
           "version": versionMap['version'],
           "buildNumber": versionMap['build_number']
         };
-        return PackageInfoData(
+        return PackageInfo(
           appName: map['appName'],
           version: map['version'],
           buildNumber: map['buildNumber'],
         );
       } catch (e) {
-        return PackageInfoData();
+        return PackageInfo();
       }
     } else {
-      return PackageInfoData();
+      return PackageInfo();
     }
   }
 }
