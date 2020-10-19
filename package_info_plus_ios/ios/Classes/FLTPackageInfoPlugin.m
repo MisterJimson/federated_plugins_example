@@ -16,8 +16,7 @@
 - (void)handleMethodCall:(FlutterMethodCall*)call result:(FlutterResult)result {
   if ([call.method isEqualToString:@"getAll"]) {
     result(@{
-      @"appName" : [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"]
-          ?: [NSNull null],
+      @"appName" : @"test msg from package_info_plus_ios",
       @"packageName" : [[NSBundle mainBundle] bundleIdentifier] ?: [NSNull null],
       @"version" : [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]
           ?: [NSNull null],

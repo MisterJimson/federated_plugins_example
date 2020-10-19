@@ -257,6 +257,13 @@ packages:
       relative: true
     source: path
     version: "0.1.0"
+  package_info_plus_ios:
+    dependency: "direct main"
+    description:
+      path: "../package_info_plus_ios"
+      relative: true
+    source: path
+    version: "0.1.0"
   package_info_plus_macos:
     dependency: "direct main"
     description:

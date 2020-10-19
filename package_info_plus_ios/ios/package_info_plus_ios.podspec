@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = 'package_info_plus'
+  s.name             = 'package_info_plus_ios'
   s.version          = '0.4.5'
   s.summary          = 'Flutter Package Info'
   s.description      = <<-DESC
