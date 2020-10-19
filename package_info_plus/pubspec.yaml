@@ -7,8 +7,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: io.flutter.plugins.packageinfo
-        pluginClass: PackageInfoPlugin
+        default_package: package_info_plus_android
       ios:
         pluginClass: FLTPackageInfoPlugin
       macos:
@@ -22,6 +21,8 @@ dependencies:
   package_info_plus_platform_interface: ^0.1.0
   package_info_plus_web: ^0.1.0
   package_info_plus_macos: ^0.1.0
+  package_info_plus_android:
+    path: ../package_info_plus_android
 
 dev_dependencies:
   flutter_test:

@@ -257,6 +257,13 @@ packages:
       relative: true
     source: path
     version: "0.5.0"
+  package_info_plus_android:
+    dependency: transitive
+    description:
+      path: "../../package_info_plus_android"
+      relative: true
+    source: path
+    version: "0.1.0"
   package_info_plus_macos:
     dependency: transitive
     description:
