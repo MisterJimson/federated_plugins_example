@@ -55,7 +55,7 @@ public class PackageInfoPlugin implements MethodCallHandler, FlutterPlugin {
         PackageInfo info = pm.getPackageInfo(applicationContext.getPackageName(), 0);
 
         Map<String, String> map = new HashMap<>();
-        map.put("appName", info.applicationInfo.loadLabel(pm).toString());
+        map.put("appName", "Test msg from package_info_plus_android");
         map.put("packageName", applicationContext.getPackageName());
         map.put("version", info.versionName);
         map.put("buildNumber", String.valueOf(getLongVersionCode(info)));
