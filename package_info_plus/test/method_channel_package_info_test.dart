@@ -5,8 +5,8 @@
 import 'package:mockito/mockito.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:package_info_plus_platform_interface/method_channel_package_info.dart';
-import 'package:package_info_plus_platform_interface/package_info_platform_interface.dart';
+import 'package:package_info_plus/package_info_plus.dart';
+import 'package:package_info_plus/src/method_channel_package_info.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 void main() {

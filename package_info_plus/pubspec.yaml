@@ -16,11 +16,13 @@ flutter:
         default_package: package_info_plus_web
 
 dependencies:
+  plugin_platform_interface: ^1.0.3
   flutter:
     sdk: flutter
-  package_info_plus_platform_interface: ^0.1.0
-  package_info_plus_web: ^0.1.0
-  package_info_plus_macos: ^0.1.0
+  package_info_plus_web:
+    path: ../package_info_plus_web
+  package_info_plus_macos:
+    path: ../package_info_plus_macos
   package_info_plus_android:
     path: ../package_info_plus_android
   package_info_plus_ios:
@@ -32,8 +34,9 @@ dev_dependencies:
   flutter_driver:
     sdk: flutter
   test: any
-  integration_test: ^0.9.1
+  integration_test: ^0.9.2+1
   pedantic: ^1.8.0
+  mockito: ^4.1.2
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
